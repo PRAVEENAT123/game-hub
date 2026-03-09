@@ -1,12 +1,26 @@
-import { Button, HStack } from "@chakra-ui/react"
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 
 const Demo = () => {
   return (
-    <HStack>
-      <Button>Click me</Button>
-      <Button>Click me</Button>
-    </HStack>
-  )
-}
+    <Grid
+      templateAreas={{
+        base: `"nav nav" "main main"`,
+        lg: `"nav nav" "aside main"`,
+      }}
+    >
+      <GridItem area={"nav"} bg="black">
+        Nav
+      </GridItem>
 
-export default Demo
+      <GridItem area="aside" bg="red" display={{ base: "none", lg: "block" }}>
+        Aside
+      </GridItem>
+
+      <GridItem area={"main"} bg="yellow">
+        Main
+      </GridItem>
+    </Grid>
+  );
+};
+
+export default Demo;
