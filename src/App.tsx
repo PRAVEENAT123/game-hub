@@ -14,11 +14,11 @@ const Demo = () => {
         <NavBar></NavBar>
       </GridItem>
 
-      <GridItem area="aside" bg="red" display={{ base: "none", lg: "block" }}>
+      <GridItem area="aside" display={{ base: "none", lg: "block" }}>
         Aside
       </GridItem>
 
-      <GridItem area={"main"} bg="yellow">
+      <GridItem area={"main"}>
         <GameGrid />
       </GridItem>
     </Grid>

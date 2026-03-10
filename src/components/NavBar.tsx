@@ -7,8 +7,7 @@ const NavBar = () => {
   return (
     <HStack justifyContent="space-between" padding="10px">
       <Image src={Logo}></Image>
-      <Text> Navbar</Text>
-      <ColorModeButton></ColorModeButton>
+      <ColorModeButton> </ColorModeButton>
     </HStack>
   );
 };
