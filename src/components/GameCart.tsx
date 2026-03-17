@@ -1,4 +1,4 @@
-import { FeatchGamesResponce, Game } from "@/hooks/useGames";
+import { Game } from "@/hooks/useGames";
 import { Card, CardBody, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import PlatFormIconsList from "./platFormIconsList";
@@ -10,7 +10,7 @@ interface Props {
 }
 const GameCart = ({ game }: Props) => {
   return (
-    <Card.Root overflow="hidden" borderRadius={10} width="300px">
+    <Card.Root overflow="hidden" borderRadius={10}>
       <Image src={getCroppedImageURL(game.background_image)}></Image>
       <Card.Body>
         <Card.Title>{game.name}</Card.Title>
