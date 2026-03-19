@@ -4,11 +4,14 @@ import Logo from "../assets/gaming_logo.svg";
 import { ColorModeButton } from "./ui/color-mode";
 import SearchInput from "./SearchInput";
 
-const NavBar = () => {
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack padding="10px">
       <Image src={Logo}></Image>
-      <SearchInput />
+      <SearchInput onSearch={onSearch} />
       <ColorModeButton />
       <Text whiteSpace={"nowrap"}>Dark Mode</Text>
     </HStack>
