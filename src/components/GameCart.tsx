@@ -8,7 +8,7 @@ import getCroppedImageURL from "@/services/iamge-url";
 interface Props {
   game: Game;
 }
-// Added the comment
+// Added the comment code
 const GameCart = ({ game }: Props) => {
   return (
     <Card.Root overflow="hidden" borderRadius={10}>
