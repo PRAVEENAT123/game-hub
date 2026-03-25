@@ -1,5 +1,5 @@
 import useData from "@/hooks/useData";
-import useGenre, { Genre } from "@/hooks/UseGenre";
+import useGenre, { Genre } from "@/hooks/useGenre";
 import getCroppedImageURL from "@/services/iamge-url";
 import {
   Button,
